@@ -1,0 +1,55 @@
+.project {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .projects-list__card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-color:rgba(33, 150, 243, 0.9);
+  
+    opacity: 0;
+  
+    transform: translateY(100%);
+    transition: transform 250ms $cube, opacity 250ms $cube;
+   }
+  
+   .project-overlay__text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: left;
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  
+    margin: 0;
+  
+    color: $background-color;
+   }
+  
+  .projects-list__item a:hover .project-overlay,
+  .projects-list__item a:focus .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }  

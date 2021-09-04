@@ -1,0 +1,317 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: $cube;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    max-width: 528px;
+   
+    padding: 40px;
+    margin: 0;
+  
+    min-width: 528px;
+   border-radius: 4px;
+  
+    background-color: rgba(255, 255, 255, 1);
+  
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms $cube;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+  
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    padding: 0;
+  
+    width: 30px;
+    height: 30px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+    color: #000000;
+    background-color: $background-color;
+    transition: fill 250ms $cube;
+    &:hover, &:focus {
+        fill: $hover-color;
+        background-color: $background-color;
+        transform: transition;
+    }
+}
+  
+
+  
+.icon-close {
+    fill: currentColor;
+  
+    object-position: center;
+}
+  
+.modal-form__title {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+  
+    color: $main-color;
+  
+    margin: 0;
+    margin-bottom: 12px;
+}
+  
+  .form-field {
+    display: block;
+    position: relative;
+  
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      }
+  }
+  
+  .form-field__input {
+    position: relative;
+    width: 448px;
+    height: 40px;
+  
+    padding-left: 42px;
+    margin-top: 4px;
+  
+    border-radius: 4px;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  
+    transition: border 250ms $cube;
+  
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-align: left;
+  
+    color: $main-color;
+  
+    cursor: pointer;
+    &:hover, &:focus {
+      border-color: $hover-color;
+      outline: none;
+    }
+    &:focus ~ .form-field__icon, &:hover ~ .form-field__icon {
+      fill: $hover-color;
+    }
+  }
+   
+  .form-field__name {
+    color: rgba(117, 117, 117, 1);
+  
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  
+  .form-field__icon {
+    position: absolute;
+    left: 12px;
+    top: 30px;
+  
+    fill: rgba(33, 33, 33, 1);
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $cube;
+  }
+  
+ 
+  
+  .form-field__text {
+    padding-top: 12px;
+    padding-left: 12px;
+    margin-top: 4px;
+  
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: $cube;
+  
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    text-align: left;
+  
+    color: $main-color;
+    cursor: pointer;
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    &:hover, &:focus {
+      border-color: $hover-color;
+      outline: none;
+    }
+  }
+  
+.policy {
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+  
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: left;
+  
+    margin-bottom: 30px;
+  }
+  
+  .policy__browser-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .policy__custom-chechbox {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+  
+    border: 2px solid $main-color;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+  
+    margin-right: 7px;
+  
+    cursor: pointer;
+  
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $cube;
+    &:hover, &:focus {
+      border-color: $hover-color;
+      transform: trasition;
+    }
+  }
+  
+
+  
+  .policy__browser-checkbox:checked + .policy__custom-chechbox {
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    object-fit: fill;
+  
+    border-color: $hover-color;
+  
+    fill: $hover-color;
+  }
+  
+  .policy__agreement {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 36px;
+  }
+  
+  .policy__link {
+    text-decoration: underline;
+    color: $hover-color;
+    &:visited {
+      color: $hover-color;
+    }
+  }
+  
+.policy__button {
+    display: block;
+  
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+  
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+  
+    background-color: $hover-color;
+    color: $background-color;
+  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+    cursor: pointer;
+  }
+  
