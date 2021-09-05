@@ -1960,16 +1960,8 @@ body a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link {
-  background-color: #ffffff;
-}
-
-.social-list__link:hover, .social-list__link:focus {
-  background-color: #2196f3;
-}
-
 .social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
-  fill: #ffffff;
+  fill: #2196f3;
   -webkit-transform: transition;
           transform: transition;
   -webkit-transition-duration: 250ms;
@@ -2916,8 +2908,8 @@ body a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
+  -webkit-transition-property: #ffffff;
+  transition-property: #ffffff;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

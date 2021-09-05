@@ -95,7 +95,7 @@ display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition-property: background-color;
+    transition-property: $background-color;
     transition-duration: 250ms;
     transition-timing-function: $cube;
     fill: $background-color;
@@ -248,11 +248,3 @@ display: flex;
       margin: 0;
     }
   }
-  
-  // .send-icon {
-  //   width: 24px;
-  //   height: 24px;
-  //   display: block;
-  //   margin-left: 10px;
-  //   fill: $background-color;
-  // }

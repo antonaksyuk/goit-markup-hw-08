@@ -43,7 +43,7 @@ font-weight: 700;
 line-height: 42px;
 letter-spacing: 0.03em;
 text-align: center;
-color: #212121;
+color: $main-color;
 
 margin: 0;
 margin-bottom: 50px;
@@ -75,7 +75,7 @@ margin-bottom: 50px;
     &:nth-child(2n) {
       margin-right: 0;
     }
-    
+
     &:nth-last-child(-n + 2) {
       margin-bottom: 0px;
     }
