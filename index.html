@@ -22,9 +22,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-container">
+        <a href="./index.html" class="web-header" lang="en">Web<span class="studio-black">Studio</span></a>
+        <div class="menu-navi js-menu-container"> 
         <nav class="main-navi">
-          <a href="./index.html" class="web-header" lang="en">Web<span class="studio-black">Studio</span></a>
           <ul class="navi-list">
             <li class="navi-list__item current">
               <a class="navi-list__link current" href="./index.html">Студия</a>
@@ -37,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact-block">
+          <ul class="contact-block">
           <li class="contact-block__item">
             <a class="contact-block__link" href="mailto:info@devstudio.com">
               <svg class="icon-latter" width="16" height="12">
@@ -53,6 +54,34 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <ul class="socialnavi-list">
+          <li class="socialnavi-list__item">
+            <a href="#" class="socialnavi-list__link">Instagram</a>
+          </li>
+          <li class="socialnavi-list__item">
+            <a href="#" class="socialnavi-list__link">Twitter</a>
+          </li>
+          <li class="socialnavi-list__item">
+            <a href="#" class="socialnavi-list__link">Facebook</a>
+          </li>
+          <li class="socialnavi-list__item">
+            <a href="#" class="socialnavi-list__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="menu-button js-open-menu">
+        <svg width="24" height="18" class="menu-button__icon">
+          <use
+            id="close"
+            class="menu-open"
+            href="./images/sprite.svg#menu-open"
+          ></use>
+          <use
+            class="menu-close js-close-menu"
+            href="./images/sprite.svg#menu-close"
+          ></use>
+        </svg>
+      </button>
       </div>
     </header>
     <main>
@@ -64,7 +93,7 @@
       </section>
       <section class="skills">
         <h2 class="visually-hidden">Заголовок</h2>
-        <div class="container">
+        <div class="skills__container">
           <ul class="competence">
             <li class="competence__item">
               <div class="competence__pic">
@@ -123,6 +152,7 @@
           <ul class="works__list">
             <li class="works__item">
               <img
+                srcset="./images/hands_desktop@1x.jpg 370w, ./images/hands_desktop@2x.jpg 740w"
                 src="./images/img1.jpg"
                 width="370"
                 alt="человек работает за компьютером"
@@ -131,6 +161,7 @@
             </li>
             <li class="works__item">
               <img
+                srcset="./images/phone_desktop@1x.jpg 370w, ./images/phone_desktop@2x.jpg 740w"
                 src="./images/img2.jpg"
                 width="370"
                 alt="человек держит телефон"
@@ -139,6 +170,7 @@
             </li>
             <li class="works__item">
               <img
+                srcset="./images/tablet_desktop@1x.jpg 370w, ./images/tablet_desktop@2x.jpg 740w"
                 src="./images/img3.jpg"
                 width="370"
                 alt="человек держит планшет"
@@ -150,10 +182,18 @@
       </section>
       <section class="team">
         <h2 class="team__title">Наша команда</h2>
-        <div class="container">
+        <div class="container container--team">
           <ul class="team__list">
             <li class="team__item">
               <img
+              srcset="
+              ./images/ihor_mibile@1x.jpg  450w,
+              ./images/ihor_mobile@2x.jpg  900w
+              ./images/ihor_tablet@1x.jpg  354w,
+              ./images/ihor_tablet@2x.jpg  708w,
+              ./images/ihor_desktop@1x.jpg 270w,
+              ./images/ihor_desktop@2x.jpg 540w
+            "
                 src="./images/imgf1.jpg"
                 width="270"
                 alt="Игорь Демьяненко"
@@ -194,7 +234,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/imgf2.jpg" width="270" alt="Ольга Репина" />
+              <img 
+              srcset="
+              ./images/olha_mibile@1x.jpg  450w,
+              ./images/olha_mobile@2x.jpg  900w
+              ./images/olha_tablet@1x.jpg  354w,
+              ./images/olha_tablet@2x.jpg  708w,
+              ./images/olha_desktop@1x.jpg 270w,
+              ./images/olha_desktop@2x.jpg 540w
+            "
+              src="./images/imgf2.jpg" 
+              width="270" 
+              alt="Ольга Репина" />
               <div class="emloyee">
                 <h3 class="emloyee__name">Ольга Репина</h3>
                 <p class="emloyee__position">Frontend Developer</p>
@@ -231,7 +282,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/imgf3.jpg" width="270" alt="Николай Тарасов" />
+              <img 
+              srcset="
+              ./images/mikolai_mibile@1x.jpg  450w,
+              ./images/mikolai_mobile@2x.jpg  900w
+              ./images/mikolai_tablet@1x.jpg  354w,
+              ./images/mikolai_tablet@2x.jpg  708w,
+              ./images/mikolai_desktop@1x.jpg 270w,
+              ./images/mikolai_desktop@2x.jpg 540w
+            "
+              src="./images/imgf3.jpg" 
+              width="270" 
+              alt="Николай Тарасов" />
               <div class="emloyee">
                 <h3 class="emloyee__name">Николай Тарасов</h3>
                 <p class="emloyee__position">Marketing</p>
@@ -268,7 +330,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/imgf4.jpg" width="270" alt="Михаил Ермаков" />
+              <img 
+              srcset="
+              ./images/mikhail_mibile@1x.jpg  450w,
+              ./images/mikhail_mobile@2x.jpg  900w
+              ./images/mikhail_tablet@1x.jpg  354w,
+              ./images/mikhail_tablet@2x.jpg  708w,
+              ./images/mikhail_desktop@1x.jpg 270w,
+              ./images/mikhail_desktop@2x.jpg 540w
+            "
+              src="./images/imgf4.jpg" 
+              width="270" 
+              alt="Михаил Ермаков" />
               <div class="emloyee">
                 <h3 class="emloyee__name">Михаил Ермаков</h3>
                 <p class="emloyee__position">UI Designer</p>
@@ -308,8 +381,8 @@
         </div>
       </section>
       <section class="constant-customers">
+        <h2 class="constant-customers__title">Постоянные клиенты</h2>
         <div class="constant-customers__container">
-          <h2 class="constant-customers__title">Постоянные клиенты</h2>
           <ul class="customers-list">
             <li class="customers-list__item">
               <a href="" class="customers-list__logo">
@@ -358,7 +431,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container footer__container--mobile">
         <div class="container-div">
           <a href="./index.html" class="container-div__logo" lang="en">Web<span class="studio-white">Studio</span></a>
           <address>
@@ -468,7 +541,7 @@
                name="comment"
                class="form-field__text" 
                placeholder="Введите текст"></textarea>
-                    </label>
+            </label>
            <label class="policy">
            <input type="checkbox" name="policy" class="policy__browser-checkbox" required>
            <span class="policy__custom-chechbox">
@@ -483,5 +556,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
