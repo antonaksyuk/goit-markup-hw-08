@@ -197,9 +197,9 @@
 }
 
 .social-list__link {
-  $background-color: $background-color;
+  background-color: $background-color;
   &:hover, &:focus {
-    $background-color: $hover-color;
+    background-color: $hover-color;
    }
    &:hover .social-list__icon, &:focus .social-list__icon {
      fill: $background-color;

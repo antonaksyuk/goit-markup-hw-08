@@ -127,9 +127,8 @@
   letter-spacing: 0.03em;
   font-size: 14px;
   color: $background-color;
-
-  padding-top: 20px;
-  padding-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 9px;
   @media screen and (max-width: 767px) {
     text-align: center;
   }

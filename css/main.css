@@ -543,7 +543,7 @@ body a {
   .navi-list__link.current::after {
     position: absolute;
     left: 0;
-    bottom: -1.3px;
+    bottom: -1px;
     content: "";
     width: 100%;
     height: 4px;
@@ -556,7 +556,7 @@ body a {
   .navi-list__link.current::after {
     position: absolute;
     left: 0;
-    bottom: -1.3px;
+    bottom: -1px;
     content: "";
     width: 100%;
     height: 4px;
@@ -1960,8 +1960,16 @@ body a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-list__link {
+  background-color: #ffffff;
+}
+
+.social-list__link:hover, .social-list__link:focus {
+  background-color: #2196f3;
+}
+
 .social-list__link:hover .social-list__icon, .social-list__link:focus .social-list__icon {
-  fill: #2196f3;
+  fill: #ffffff;
   -webkit-transform: transition;
           transform: transition;
   -webkit-transition-duration: 250ms;
@@ -2199,7 +2207,7 @@ body a {
 @media screen and (max-width: 767px) {
   .buttons-container {
     width: 450px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2208,8 +2216,8 @@ body a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 30px;
-    width: 768px;
+    margin-bottom: 30px;
+    width: 738px;
   }
 }
 
@@ -2218,8 +2226,8 @@ body a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 50px;
-    width: 1200px;
+    margin-bottom: 50px;
+    width: 1170px;
   }
 }
 
@@ -2308,7 +2316,7 @@ body a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 768px;
+    width: 738px;
   }
 }
 
@@ -2317,7 +2325,7 @@ body a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -2396,7 +2404,7 @@ body a {
 
 @media screen and (min-width: 768px) {
   .projects-list {
-    width: 768px;
+    width: 738px;
     -webkit-box-orient: unset;
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
@@ -2411,14 +2419,13 @@ body a {
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
   }
 }
 
 .projects-list__item {
   position: relative;
-  border: 1px solid #eeeeee;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2445,9 +2452,6 @@ body a {
   .projects-list__item:last-child {
     margin-bottom: 0px;
   }
-  .projects-list__item:nth-child(3n + 3) {
-    margin-right: 30px;
-  }
   .projects-list__item:nth-last-child(-n + 3) {
     margin-bottom: 30px;
   }
@@ -2457,6 +2461,7 @@ body a {
   .projects-list__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    width: 370px;
   }
   .projects-list__item:nth-child(2n + 2) {
     margin-right: 30px;
@@ -2726,8 +2731,8 @@ body a {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 @media screen and (max-width: 767px) {
@@ -2802,9 +2807,6 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2812,6 +2814,9 @@ body a {
 
 @media screen and (max-width: 767px) {
   .footer-subscription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2822,6 +2827,9 @@ body a {
 
 @media screen and (min-width: 768px) {
   .footer-subscription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2834,12 +2842,16 @@ body a {
 
 @media screen and (min-width: 1200px) {
   .footer-subscription {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 70px;
     margin-right: 93px;
+    text-align: left;
   }
 }
 
