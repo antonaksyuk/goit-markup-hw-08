@@ -67,7 +67,8 @@
 
 .competence__item {
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
+    min-width: 290px;
     margin: 0 auto;
     margin-bottom: 30px;
     &:last-child {
@@ -107,10 +108,13 @@
 
   border-radius: 4px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media screen and (max-width: 767px) {
     max-width: 450px;
-    padding-left: 192px;
-    padding-right: 192px;
+    min-width: 290px;
     padding-top: 25px;
     padding-bottom: 25px;
 

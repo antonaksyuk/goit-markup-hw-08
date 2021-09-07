@@ -7,7 +7,7 @@
 .footer__container--mobile {
 display: flex;
 @media screen and (max-width: 767px) {
-  width: 480px;
+  width: auto;
   flex-direction: column;
   justify-content: center;
 }
@@ -79,6 +79,7 @@ display: flex;
   display: flex;
   @media screen and (max-width: 767px) {
     justify-content: center;
+    margin-top: 0;
     margin-bottom: 60px;
     padding-left: 0;
   }
@@ -113,8 +114,7 @@ display: flex;
     width: auto;
 
     margin-left: 0px;
-    margin-right: auto;
-  
+     
     display: block;
     justify-content: center;
     align-items: center;
@@ -187,7 +187,9 @@ display: flex;
       outline: none;
     }
     @media screen and (max-width: 767px) {
-      width: 450px;
+      width: 100%;
+      min-width: 290px;
+      max-width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) {

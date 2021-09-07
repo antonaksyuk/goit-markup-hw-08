@@ -60,6 +60,7 @@ margin-bottom: 50px;
   margin-bottom: 0px;
   @media screen and (max-width: 767px) {
     margin: 0 auto;
+    min-width: 290px;
   }
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
@@ -68,7 +69,7 @@ margin-bottom: 50px;
 
 .customers-list__item {
   @media screen and (max-width: 767px) {
-    width: 210px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
 
