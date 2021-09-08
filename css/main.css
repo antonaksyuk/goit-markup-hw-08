@@ -2538,6 +2538,8 @@ body a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  -ms-flex-negative: 0.5;
+      flex-shrink: 0.5;
 }
 
 .projects-list__card {
