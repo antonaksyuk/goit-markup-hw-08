@@ -213,7 +213,10 @@
 .projects-list__item {
   position: relative;
 
-  // border: 1px solid rgba(238, 238, 238, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   box-shadow: none;
   
   @media screen and (max-width: 767px) {
@@ -299,11 +302,11 @@
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  // border-left: 1px solid #eeeeee;
+  // border-right: 1px solid #eeeeee;
+  // border-bottom: 1px solid #eeeeee;
 
-  flex-shrink: 0.5;
+  flex-grow: 1;
 }
 
 .projects-list__card {
